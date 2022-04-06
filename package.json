@@ -1,0 +1,41 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "mm": "npx mockm --cwd=mm",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.23",
+    "axios": "^0.26.1",
+    "dart-sass": "^1.25.0",
+    "element-plus": "^2.1.4",
+    "lodash": "^4.17.21",
+    "mockm": "^1.1.26-alpha.9",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.13",
+    "pinia-plugin-persist": "^1.0.0",
+    "sass": "^1.49.9",
+    "unplugin-auto-import": "^0.6.6",
+    "unplugin-vue-components": "^0.18.3",
+    "vite-plugin-windicss": "^1.8.3",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14",
+    "vuex": "^4.0.2",
+    "windicss": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "@vue/cli-plugin-typescript": "^5.0.4",
+    "@vue/test-utils": "^2.0.0-rc.17",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "mockm": "1.1.26-alpha.9",
+    "vite": "^2.8.0",
+    "vue-jest": "^3.0.7"
+  }
+}
