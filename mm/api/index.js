@@ -29,11 +29,33 @@ module.exports = util => {
         res.json({
           token: user
         })
+      },
+      //创建动态路由表
+      "get /api/permission": (req, res) => {
+        let router = [{
+            url: '/dashboard', // 模块路径&访问路由
+            name: '/dashboard',
+            title: '数据门户',
+            icon: 'icon-index-copy',
+          },
+          {
+            url: '/dataManage',
+            name: '/dataManage',
+            title: '数据管理',
+            icon: 'icon-shuju',
+          },
+          {
+            url: '/userManage',
+            name: '/userManage',
+            title: '用户管理',
+            icon: 'icon-yonghuguanli',
+          },
+        ]
+        res.json({
+          menuList: router,
+          permissions: [],
+        })
       }
     },
-    //创建动态路由表
-    "get /api/permission": (req, res) => {
-      let router = []
-    }
   }
 }

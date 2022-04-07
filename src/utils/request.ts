@@ -20,8 +20,6 @@ request.interceptors.request.use(
 
 // 响应拦截
 request.interceptors.response.use((response: AxiosResponse) => {
-    console.log(response);
-    
     //状态码
     return response
 }, (error) => {

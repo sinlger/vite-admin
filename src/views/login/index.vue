@@ -55,10 +55,7 @@ export default {
     const submit = async (formEl) => {
       let { data } = await Login(formData)
       userStore.set_token(data.token)
-      router.push({
-        path: "/"
-      })
-      // location.reload()
+      location.reload()
     }
     return {
       formData,

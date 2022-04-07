@@ -1,10 +1,12 @@
 <template>
-  这里是dashboard
+
 </template>
 
-<script lang='ts' setup>
+<script>
+export default {
+
+};
 </script>
 
 <style scoped lang="scss">
 </style>
-
