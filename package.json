@@ -10,7 +10,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^1.1.4",
     "@types/node": "^17.0.23",
+    "autoprefixer": "^10.4.4",
     "axios": "^0.26.1",
     "dart-sass": "^1.25.0",
     "element-plus": "^2.1.4",
@@ -19,7 +21,10 @@
     "nprogress": "^0.2.0",
     "pinia": "^2.0.13",
     "pinia-plugin-persist": "^1.0.0",
+    "postcss": "^8.4.12",
+    "postcss-pxtorem": "^6.0.0",
     "sass": "^1.49.9",
+    "three": "^0.139.2",
     "unplugin-auto-import": "^0.6.6",
     "unplugin-vue-components": "^0.18.3",
     "vite-plugin-windicss": "^1.8.3",

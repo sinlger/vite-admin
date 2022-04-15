@@ -1,22 +1,40 @@
 <template>
-  <h2 class=" text-light-400 ">
+
+  <div class="common-layout">
+    <el-container>
+      <el-aside width="200px" class="bg-light-100">
+        <GlobalHeader></GlobalHeader>
+      </el-aside>
+      <el-container>
+        <el-header>
+        </el-header>
+        <el-main>
+          <router-view v-slot="{ Component }">
+            <keep-alive>
+              <component :is="Component" />
+            </keep-alive>
+          </router-view>
+        </el-main>
+        <el-footer>Footer</el-footer>
+      </el-container>
+    </el-container>
+  </div>
+  <!-- <h2 class=" text-light-400 ">
     <div>
       <li v-for="(item,index) of menuLists">
         <router-link :to="item.path">{{item.name}}</router-link>
       </li>
       <el-button @click="exit">退出</el-button>
     </div>
-    BasicLayouts
-    <div>
-      <router-view></router-view>
-    </div>
-  </h2>
+  </h2> -->
 </template>
 
 <script lang='ts'>
 import { RouterView, RouteRecordRaw, useRoute, useRouter } from "vue-router";
+import GlobalHeader from "@/components/GlobalHeader/index.vue";
 import { computed } from "vue";
 export default {
+  components: { GlobalHeader },
   setup(props, context) {
     const route = useRoute();
     const router = useRouter();

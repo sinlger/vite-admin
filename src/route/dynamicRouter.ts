@@ -21,7 +21,7 @@ const Routers: Array<RouteRecordRaw> = [{
 }, {
     path: "/:pathMatch(.*)",
     name: 'error',
-    component: () => import("@/views/error/403.vue"),
+    component: () => import("@/views/error/404.vue"),
     meta: { title: "404", hidden: true }
 }]
 

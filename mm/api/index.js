@@ -36,19 +36,19 @@ module.exports = util => {
             url: '/dashboard', // 模块路径&访问路由
             name: '/dashboard',
             title: '数据门户',
-            icon: 'icon-index-copy',
+            icon: 'suitcase',
           },
           {
             url: '/dataManage',
             name: '/dataManage',
             title: '数据管理',
-            icon: 'icon-shuju',
+            icon: 'data-board',
           },
           {
             url: '/userManage',
             name: '/userManage',
             title: '用户管理',
-            icon: 'icon-yonghuguanli',
+            icon: 'user',
           },
         ]
         res.json({
